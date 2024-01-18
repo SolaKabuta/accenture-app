@@ -30,9 +30,9 @@ const Home = () => {
             {/* LAPTOP/DESKTOP DISPLAY */}
           
         </div>
-        <div className='max-2xl:hidden'>
-                    <img src={LoginBg} alt="login page background" />
-        </div>
+        {/* <div className='max-2xl:hidden'>
+            <img className='absolute -z-50' src={LoginBg} alt="login page background" />
+        </div> */}
         </>
      );
 }

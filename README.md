@@ -1,4 +1,4 @@
-# React + Vite + Adobe XD
+# React + Vite (from Adobe XD)
 
 
 Hello my lovely nerds !

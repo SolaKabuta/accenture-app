@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'login-desktop': "url('/src/assets/Images/login-bg.png')",
+      },
       colors: {
         'blk': '#17111D',
         'btn': '#6502B9',

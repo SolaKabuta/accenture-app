@@ -30,9 +30,14 @@ const Home = () => {
             {/* LAPTOP/DESKTOP DISPLAY */}
           
         </div>
-        {/* <div className='max-2xl:hidden'>
-            <img className='absolute -z-50' src={LoginBg} alt="login page background" />
-        </div> */}
+        {/* Background image */}
+        <div className="w-screen h-screen bg-cover" style={{ backgroundImage: `url(${LoginBg})` }} >
+            {/* <img className='relative -z-50' src={LoginBg} alt="login page background" /> */}
+            <div>
+            <button className="h-20 text-sm font-normal text-black bg-white rounded-full w-52"><img className='absolute w-5 left-5' src={Google} alt="google logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google</button> 
+                
+            </div>
+        </div>
         </>
      );
 }

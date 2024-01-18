@@ -10,7 +10,8 @@ In the future i'd like to built it in React Native, wich I have to learn first..
 
 Here's a link where you can see a glimpse of the "final" product. I'll upload the full (and working) prototype made with Adobe XD later on Dribbble and Behance, but first let's write some code.
 
+Enjoy.
+
 - https://dribbble.com/shots/23457405-Log-in-page-Accenture-Mobility-app-UI
 
 
-Enjoy.

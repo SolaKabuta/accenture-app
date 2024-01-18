@@ -10,7 +10,7 @@ const Home = () => {
     return ( 
         // MOBILE DISPLAY
         <>
-        <div className="w-screen h-screen home-container bg-blk min-[1440px]:hidden">
+        <div className="w-screen h-screen home-container bg-blk min-[1440px]:hidden ">
             <div className="grid texts place-items-center pt-60">
                 <h1 className="pb-20 font-bold">Welcome</h1> 
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
@@ -24,16 +24,17 @@ const Home = () => {
                 <button className="h-20 text-sm font-normal text-black bg-white rounded-full w-52"><img className='absolute w-5 left-5' src={Google} alt="google logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google</button> 
                 </div>
                 
-                <a className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
+                <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
                 <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>
             </div>
         </div>
         
         
         {/* LAPTOP/DESKTOP DISPLAY */}
-        <div className="h-screen bg-cover w-[50vw] max-[1440px]:hidden" style={{ backgroundImage: `url(${LoginBg})` }} >
+        <div className="h-screen bg-cover w-[50vw] hidden xl:block" style={{ backgroundImage: `url(${LoginBg})` }} >
         
         {/* CONTENT */}
+            
             <div className="grid pt-[10vw] place-items-center">
                 <h1 className="pb-20 font-bold">Welcome</h1> 
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
@@ -45,10 +46,11 @@ const Home = () => {
                 <button className="h-20 text-sm font-normal text-black bg-white rounded-full w-52"><img className='absolute w-5 left-5' src={Google} alt="google logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google</button> 
                 </div>
                 
-                <a className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
+                <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
                 <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>
                 
-                <img className='absolute right-28' src={Logo} alt="Accenture's logo"></img>
+                
+                <img id='logo' className='absolute right-28' src={Logo} alt="Accenture's logo"></img>
                 
             </div>
         

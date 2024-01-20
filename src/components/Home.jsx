@@ -16,7 +16,7 @@ const Home = () => {
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
             </div>
             <div className="grid buttons place-items-center">
-                <button id="create" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-btn to-rng">Create an account </button> 
+                <button id="create" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-btn to-rng" href="./Register.jsx">Create an account </button> 
                 <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 
                 {/* Google Auth */}
@@ -38,12 +38,11 @@ const Home = () => {
             <div className="grid pt-[10vw] place-items-center">
                 <h1 className="pb-20 font-bold">Welcome</h1> 
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
-                <button id="create" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-btn to-rng">Create an account </button> 
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
+                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 
                 {/* Google Auth */}
                 <div className="relative">
-                <button className="h-16 text-sm font-normal text-black bg-white rounded-full w-52"><img className='absolute w-5 left-5' src={Google} alt="google logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google</button> 
+                <button className="h-16 text-sm font-normal text-black bg-white rounded-lg w-52"><img className='absolute w-5 left-5' src={Google} alt="google logo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google</button> 
                 </div>
                 
                 <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>

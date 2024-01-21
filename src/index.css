@@ -60,11 +60,9 @@ button:hover {
 }
 
 input {
-  border-radius: 8px;
   padding: 0.6em 1.2em;
   background-color: #1a1a1a;
-  color: #535353;
-  transition: border-color 0.25s;
+  color: #ffffff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -83,6 +81,9 @@ input {
 #create, #login {
   background: transparent linear-gradient(105deg, #FA9753 0%, #6502B9 100%) 0% 0% no-repeat padding-box;
 }
+
+
+
 
 #forgot {
   cursor: pointer;

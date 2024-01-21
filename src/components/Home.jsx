@@ -39,17 +39,13 @@ const Home = () => {
         {/* CONTENT */}
             
             <div className="grid pt-[12vw] place-items-center">
-                <div className=''>
                     <h1 className="pb-20 font-bold ">Welcome</h1> 
                     <h2 className="pb-20 text-2xl ">Global Employer Services <br/> Reward & Mobility Alert</h2>
-                </div>
                 
                 {/* FORM */}
                 
                 <form action="">
-                    <p>Email</p> 
                     <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="text" placeholder="Your work email" /> <br /> <br />
-                    <p>Password</p>
                     <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="password" placeholder='Your password' /> <br /> <br />
                     <button type='submit' id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 </form>

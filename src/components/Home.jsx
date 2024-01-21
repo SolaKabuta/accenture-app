@@ -35,9 +35,19 @@ const Home = () => {
         
         {/* CONTENT */}
             
-            <div className="grid pt-[10vw] place-items-center">
-                <h1 className="pb-20 font-bold">Welcome</h1> 
-                <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
+            <div className="grid pt-[20vw] place-items-center">
+                <h1 className="absolute pb-20 font-bold top-40">Welcome</h1> 
+                <h2 className="absolute pb-20 text-2xl top-60">Global Employer Services <br/> Reward & Mobility Alert</h2>
+                
+                {/* FORM */}
+                
+                <form action="">
+                    
+                    
+                </form>
+                
+                
+                
                 <button id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 
                 {/* Google Auth */}

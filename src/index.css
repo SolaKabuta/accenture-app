@@ -59,6 +59,13 @@ button:hover {
   border-color: #646cff;
 }
 
+input {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  background-color: #1a1a1a;
+  color: #535353;
+  transition: border-color 0.25s;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

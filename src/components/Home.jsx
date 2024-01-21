@@ -4,6 +4,9 @@ import Logo from '../assets/Logos/Accenture.png'
 
 
 
+// import { useForm, SubmitHandler } from "react-hook-form"
+
+
 
 
 const Home = () => {
@@ -42,13 +45,15 @@ const Home = () => {
                 {/* FORM */}
                 
                 <form action="">
-                    
-                    
+                    <p>Email</p> 
+                    <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="text" placeholder="&nbsp;&nbsp; janedoe@gmail.com" /> <br /> <br />
+                    <p>Password</p>
+                    <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="password" placeholder='&nbsp;&nbsp; please enter your password' /> <br /> <br />
+                    <button type='submit' id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 </form>
                 
                 
                 
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login</button> 
                 
                 {/* Google Auth */}
                 <div className="relative">

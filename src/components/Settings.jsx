@@ -1,9 +1,25 @@
 import { motion } from 'framer-motion';
 import WhiteLogo from '../assets/Logos/Accenture Logo.png';
-import { useState } from 'react';
 
 const Settings = () => {
-    const [isShown, setIsShown] = useState(false);
+    const buttonsLinks = [
+        {
+            name: 'Profile',
+            link: '/',
+        },
+        {
+            name: ' Advanced Settings',
+            link: '/Spline404.jsx',
+        },
+        {
+            name: 'Logout',
+            link: '/',
+        },
+        {
+            name: 'Cancel',
+            link: '/',
+        },
+    ];
 
     return (
         <>
@@ -19,7 +35,25 @@ const Settings = () => {
                         Global Employer Services <br /> Reward & Mobility Alert
                     </h2>
                 </div>
+
+                {/* Fais une boucle pour afficher les boutons */}
+
                 <div className="grid buttons place-items-center">
+                    {buttonsLinks.map((button, index) => (
+                        <a href={button.link} key={index}>
+                            <button
+                                className={
+                                    button.name === 'cancel'
+                                        ? 'h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn'
+                                        : 'h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700'
+                                }
+                            >
+                                {button.name}
+                            </button>
+                        </a>
+                    ))}
+
+                    {/*}
                     <a href="/">
                         <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">
                             Profile
@@ -43,6 +77,8 @@ const Settings = () => {
                             Cancel
                         </button>
                     </a>
+                    */}
+
                     <img
                         className="pt-48 w-36"
                         src={WhiteLogo}

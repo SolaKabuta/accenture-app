@@ -12,6 +12,7 @@ import {motion} from "framer-motion";
 
 
 const Home = () => {
+
     return ( 
         // MOBILE DISPLAY
         <>
@@ -43,8 +44,8 @@ const Home = () => {
                         alt="google logo"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google
                     </button>
                 </div>
-
-                <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
+                {/* Forgot BTN */}
+                <a href='Forgot.jsx' id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
 
                 {/* LOGO */}
                 <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>

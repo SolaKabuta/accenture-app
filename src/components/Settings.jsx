@@ -1,7 +1,8 @@
 import {motion} from "framer-motion";
-import Spline404 from "./Spline404.jsx";
+import WhiteLogo from "../assets/Logos/Accenture Logo.png";
+import {useState} from "react";
 const Settings = () => {
-
+    const [isShown, setIsShown] = useState(false);
     return (
         <>
             <motion.div className="w-screen h-screen home-container bg-blk min-[1440px]:hidden"
@@ -15,10 +16,26 @@ const Settings = () => {
                     <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
                 </div>
                 <div className="grid buttons place-items-center">
-                    <a href='/'><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Profile</button></a>
-                    <a href='/'><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Change language</button></a>
-                    <a href={Spline404}><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Advanced Settings</button></a>
-                    <a href='/'><button id='login' className='h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn'>Cancel</button></a>
+                    <a href='/'>
+                        <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Profile</button>
+                    </a>
+                    <a href='/'>
+                        <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Change
+                            language
+                        </button>
+                    </a>
+                    <a href='/Spline404.jsx'>
+                        <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Advanced
+                            Settings
+                        </button>
+                    </a>
+                    <a href='/'>
+                        <button id='login'
+                                className='h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn'>Cancel
+                        </button>
+                    </a>
+                    <img className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
+
                 </div>
             </motion.div>
         </>

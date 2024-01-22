@@ -45,8 +45,10 @@ const Home = () => {
                 </div>
 
                 <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
+
+                {/* LOGO */}
                 <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>
-                <img id='logo' className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
+                <img  className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
 
             </div>
         </motion.div>
@@ -78,9 +80,9 @@ const Home = () => {
                 <a id='forgot' className="pt-10 font-normal text-white opacity-25"><p>Forgot password ?</p></a>
                 <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>
                 
-                
+                {/* LOGO */}
                 <img id='logo' className='absolute right-28' src={Logo} alt="Accenture's logo"></img>
-                <img id='logo' className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
+                <img className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
                 
                 
             </div>

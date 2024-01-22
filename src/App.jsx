@@ -19,7 +19,7 @@ function App() {
             <div className='content'>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/Settings' element={<Settings/>}/>
+                    <Route path='/Settings.jsx' element={<Settings/>}/>
                 </Routes>
 
             </div>

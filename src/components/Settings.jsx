@@ -11,10 +11,10 @@ const Settings = () => {
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
             </div>
             <div className="grid buttons place-items-center">
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-slate-700">Profile</button> 
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-slate-700">Change language</button> 
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-slate-700">Advanced Settings</button> 
-                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-full w-52 bg-gradient-to-r from-rng to-btn">Cancel</button> 
+                <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Profile</button>
+                <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Change language</button>
+                <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Advanced Settings</button>
+                <button id="login" className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn"><a href='/'>Cancel</a></button>
 
             </div>
         </div>

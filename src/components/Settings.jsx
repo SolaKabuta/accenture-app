@@ -1,24 +1,26 @@
-
+import {motion} from "framer-motion";
+import Spline404 from "./Spline404.jsx";
 const Settings = () => {
 
     return (
         <>
-            <div className="w-screen h-screen home-container bg-blk min-[1440px]:hidden ">
+            <motion.div className="w-screen h-screen home-container bg-blk min-[1440px]:hidden"
+
+                        initial={{opacity: 0}}
+                        animate={{opacity: 1}}
+                        exit={{opacity: 0, transition: {duration: 4}}}
+            >
                 <div className="grid texts place-items-center pt-60">
                     <h1 className="pb-20 font-bold">Welcome</h1>
                     <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
                 </div>
                 <div className="grid buttons place-items-center">
-                    <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Profile</button>
-                    <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Change language
-                    </button>
-                    <button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Advanced Settings
-                    </button>
-                    <a href='/'>
-                        <button id='login' className='h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn'>Cancel</button>
-                    </a>
+                    <a href='/'><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Profile</button></a>
+                    <a href='/'><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Change language</button></a>
+                    <a href={Spline404}><button className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-slate-700">Advanced Settings</button></a>
+                    <a href='/'><button id='login' className='h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn'>Cancel</button></a>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 }

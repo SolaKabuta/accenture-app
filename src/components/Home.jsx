@@ -3,6 +3,7 @@ import LoginBg from '../assets/Images/login-bg.png'
 import Logo from '../assets/Logos/Accenture.png'
 import WhiteLogo from '../assets/Logos/Accenture Logo.png'
 
+import {motion} from "framer-motion";
 
 
 // import { useForm, SubmitHandler } from "react-hook-form"
@@ -14,7 +15,12 @@ const Home = () => {
     return ( 
         // MOBILE DISPLAY
         <>
-        <div className="w-screen h- home-container bg-blk min-[1440px]:hidden ">
+        <motion.div className="w-screen h- home-container bg-blk min-[1440px]:hidden"
+
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    exit={{opacity: 0, transition: {duration: 4}}}
+        >
             <div className="grid texts place-items-center pt-60">
                 <h1 className="pb-20 font-bold">Welcome</h1> 
                 <h2 className="pb-20 text-2xl">Global Employer Services <br/> Reward & Mobility Alert</h2>
@@ -22,11 +28,11 @@ const Home = () => {
             <div className="grid buttons place-items-center">
                 <form action="">
                     <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="text"
-                           placeholder="Your work email"/> <br/> <br/>
+                           placeholder="Your work email" required/> <br/> <br/>
                     <input className="h-16 mb-10 text-sm font-normal rounded-lg w-52" type="password"
-                           placeholder='Your password'/> <br/> <br/>
+                           placeholder='Your password' required/> <br/> <br/>
                     <button type='submit' id="login"
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn">Login
+                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52">Login
                     </button>
                 </form>
 
@@ -43,7 +49,7 @@ const Home = () => {
                 <img id='logo' className='pt-48 w-36' src={WhiteLogo} alt="Accenture's logo"></img>
 
             </div>
-        </div>
+        </motion.div>
 
 
             {/* LAPTOP/DESKTOP DISPLAY */}

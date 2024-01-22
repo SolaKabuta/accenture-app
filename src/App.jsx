@@ -1,8 +1,6 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import { useState } from 'react'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Settings from './components/Settings';
+import AnimatedRoutes from "./components/AnimatedRoutes.jsx";
 // import Register from './components/Register';
 
 
@@ -13,15 +11,9 @@ function App() {
 
     return (
         <Router>
-            <div className='App'>
-                <Navbar/>
-            </div>
             <div className='content'>
-                <Routes>
-                    <Route path='/' element={<Home/>}/>
-                    <Route path='/Settings.jsx' element={<Settings/>}/>
-                </Routes>
-
+                <Navbar/>
+               <AnimatedRoutes/>
             </div>
         </Router>
     )

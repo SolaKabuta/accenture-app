@@ -52,16 +52,17 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.8s;
 }
 button:hover {
   border-color: mediumpurple;
 }
 
 input {
-  padding: 0.6em 1.2em;
+  padding: 0.6em 1.5em;
   background-color: #1a1a1a;
   color: #ffffff;
+  text-align: center;
 }
 
 input:focus {

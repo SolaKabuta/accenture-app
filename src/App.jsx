@@ -13,7 +13,7 @@ function App() {
 
     return (
         <div className="content">
-            {location.pathname === '/Settings.jsx' ? null : <Navbar />}
+            {/*{location.pathname === '/Settings.jsx' ? null : <Navbar />}*/}
             <Routes>
                 <Route path="/" element={<AnimatedRoutes />} />
                 <Route path="/Navbar.jsx" element={<Navbar />} />

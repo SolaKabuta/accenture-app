@@ -4,6 +4,7 @@ import Logo from '../assets/Logos/Accenture.png';
 import WhiteLogo from '../assets/Logos/Accenture Logo.png';
 
 import { motion } from 'framer-motion';
+import Navbar from "./Navbar.jsx";
 
 // import { useForm, SubmitHandler } from "react-hook-form"
 
@@ -11,6 +12,7 @@ const Home = () => {
     return (
         // MOBILE DISPLAY
         <>
+            <Navbar/>
             <motion.div
                 className="w-screen h- home-container bg-blk min-[1440px]:hidden"
                 initial={{ opacity: 0 }}
@@ -70,7 +72,10 @@ const Home = () => {
                     </a>
 
                     {/* LOGO */}
-                    <div className="w-32 h-[0.5px] bg-white rounded-full opacity-25"></div>
+                    <div
+                        className="w-32 h-[0.5px] bg-white rounded-full opacity-25">
+
+                    </div>
                     <img
                         className="pt-48 w-36"
                         src={WhiteLogo}

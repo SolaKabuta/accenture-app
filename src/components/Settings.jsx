@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import WhiteLogo from '../assets/Logos/Accenture Logo.png';
+import {useState} from "react";
 
 const Settings = () => {
     const buttonsLinks = [
@@ -22,6 +23,7 @@ const Settings = () => {
     ];
 
     return (
+
         <>
             <motion.div
                 className="w-screen h-screen home-container bg-blk min-[1440px]:hidden"

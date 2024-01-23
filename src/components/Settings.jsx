@@ -13,7 +13,7 @@ const Settings = () => {
         },
         {
             name: 'Logout',
-            link: '/',
+            link: '/Logout.jsx',
         },
         {
             name: 'Cancel',
@@ -29,9 +29,13 @@ const Settings = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0, transition: { duration: 4 } }}
             >
-                <div className="grid texts place-items-center pt-60">
-                    <h1 className="pb-20 font-bold">Welcome</h1>
-                    <h2 className="pb-20 text-2xl">
+                <div
+                    className="grid texts place-items-center pt-60">
+                    <h1
+                        className="pb-20 font-bold">Welcome
+                    </h1>
+                    <h2
+                        className="pb-20 text-2xl">
                         Global Employer Services <br /> Reward & Mobility Alert
                     </h2>
                 </div>

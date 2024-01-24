@@ -15,7 +15,7 @@ function App() {
         <div className="content">
             {/*{location.pathname === '/Settings.jsx' ? null : <Navbar />}*/}
             <Routes>
-                <Route path="/" element={<AnimatedRoutes />} />
+                <Route path="*" element={<AnimatedRoutes />} />
                 <Route path="/Navbar.jsx" element={<Navbar />} />
                 <Route path="/Settings.jsx" element={<Settings />} />
                 <Route path="/Spline404.jsx" element={<Spline404 />} />

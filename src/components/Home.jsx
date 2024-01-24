@@ -9,6 +9,19 @@ import Navbar from "./Navbar.jsx";
 // import { useForm, SubmitHandler } from "react-hook-form"
 
 const Home = () => {
+
+    // function UserLogin() {
+    //     const Email = document.getElementById('Email').value;
+    //     const Password = document.getElementById('Password').value;
+    //     if (Email === 'solakabuta@gmail.com' && Password === 'test1234') {
+    //         console.log("Login successful")
+    //     }
+    //     else {
+    //         console.log("wrong email address")
+    //     }
+    // }
+
+
     return (
         // MOBILE DISPLAY
         <>
@@ -28,14 +41,16 @@ const Home = () => {
                 <div className="grid buttons place-items-center">
                     <form action="">
                         <input
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52"
+                            id={'Email'}
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52"
                             type="text"
                             placeholder="Your work email"
                             required
                         />{' '}
                         <br /> <br />
                         <input
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52"
+                            id={'Password'}
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52"
                             type="password"
                             placeholder="Your password"
                             required
@@ -44,7 +59,7 @@ const Home = () => {
                         <button
                             type="submit"
                             id="login"
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52"
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52"
                         >
                             Login
                         </button>
@@ -66,7 +81,7 @@ const Home = () => {
                     <a
                         href="Forgot.jsx"
                         id="forgot"
-                        className="pt-10 font-normal text-white opacity-25"
+                        className="pt-5 font-normal text-white opacity-25"
                     >
                         <p>Forgot password ?</p>
                     </a>
@@ -99,14 +114,14 @@ const Home = () => {
                     {/* FORM */}
                     <form action="">
                         <input
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52"
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52"
                             type="text"
                             placeholder="Your work email"
                             required
                         />{' '}
                         <br /> <br />
                         <input
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52"
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52"
                             type="password"
                             placeholder="Your password"
                             required
@@ -114,8 +129,8 @@ const Home = () => {
                         <br /> <br />
                         <button
                             type="submit"
-                            id="login"
-                            className="h-16 mb-10 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn"
+                            id="loginDesktop"
+                            className="h-16 mb-5 text-sm font-normal rounded-lg w-52 bg-gradient-to-r from-rng to-btn"
                         >
                             Login
                         </button>
@@ -123,7 +138,7 @@ const Home = () => {
 
                     {/* Google Auth */}
                     <div className="relative">
-                        <button className="h-16 text-sm font-normal text-black bg-white rounded-lg w-52">
+                        <button className="h-16 text-sm font-normal text-black bg-white rounded-lg w-52 ">
                             <img
                                 className="absolute w-5 left-5"
                                 src={Google}
@@ -136,7 +151,7 @@ const Home = () => {
 
                     <a
                         id="forgot"
-                        className="pt-10 font-normal text-white opacity-25"
+                        className="pt-5 font-normal text-white opacity-25"
                     >
                         <p>Forgot password ?</p>
                     </a>
